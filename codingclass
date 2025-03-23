@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class CollectionExample {
+    public static void main(String[] args) {
+        // Example of ArrayList
+        ArrayList<String> names = new ArrayList<>();
+        names.add("Alice");
+        names.add("Bob");
+        names.add("Charlie");
+
+        System.out.println("ArrayList Elements:");
+        for (String name : names) {
+            System.out.println(name);
+        }
+
+        // Example of HashMap
+        HashMap<Integer, String> studentMap = new HashMap<>();
+        studentMap.put(101, "Alice");
+        studentMap.put(102, "Bob");
+        studentMap.put(103, "Charlie");
+
+        System.out.println("\nHashMap Elements:");
+        for (Integer key : studentMap.keySet()) {
+            System.out.println("ID: " + key + ", Name: " + studentMap.get(key));
+        }
+    }
+}
